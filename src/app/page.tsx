@@ -56,7 +56,7 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-semibold mb-4 text-pink">About Me</h2>
             <p className="text-lg text-white text-justify">
-              Hello! I'm Heitor Marsolla, a passionate problem solver and technology enthusiast. I love learning new ways to build systems that improve life. Throughout my career, I've contributed to Back-end, Front-end, Quality Assurance, and DevOps, using various technologies. I look forward to continuing my learning journey, meeting new people, and making the world a better place through my work.
+              Hello! I&apos;m Heitor Marsolla, a passionate problem solver and technology enthusiast. I love learning new ways to build systems that improve life. Throughout my career, I&apos;ve contributed to Back-end, Front-end, Quality Assurance, and DevOps, using various technologies. I look forward to continuing my learning journey, meeting new people, and making the world a better place through my work.
             </p>
           </div>
         </section>
