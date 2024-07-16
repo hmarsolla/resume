@@ -36,7 +36,7 @@ jobs:
         run: pwd
 
       - name: Check current files
-        run: ls -la
+        run: cd .. && ls -la
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
