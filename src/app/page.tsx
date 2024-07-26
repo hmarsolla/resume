@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import Image from "next/image";
+import Image, { ImageLoader, ImageLoaderProps } from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -40,7 +40,7 @@ export default function Home() {
   };
 
 
-  const customLoader = ({src, width, quality}: {src: any, width: any, quality: any}) => {
+  const customLoader = ({src, width, quality}: ImageLoaderProps) => {
     return `${src}?w=${width}&q=${quality || 75}`
   }
 
