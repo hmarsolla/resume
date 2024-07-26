@@ -39,6 +39,11 @@ export default function Home() {
     setExpandedSkill(expandedSkill === index ? null : index);
   };
 
+
+  const customLoader = ({src, width, quality}: {src: any, width: any, quality: any}) => {
+    return `${src}?w=${width}&q=${quality || 75}`
+  }
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-blueDarker text-white">
       <header className="w-full py-5 bg-purple text-center">
@@ -47,6 +52,7 @@ export default function Home() {
       <main className="flex flex-col items-center py-10 w-full px-4 sm:px-8 lg:px-16">
         <section className="mb-8 w-full max-w-4xl flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
           <Image
+          loader={customLoader}
             src="/profile.jpg"
             width={500}
             height={500}
