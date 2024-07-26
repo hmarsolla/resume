@@ -29,6 +29,9 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: Remove cache if exists 🗑️
+        run: rm -rf .next && rm -rf out/
+
       - name: Remove default next.config.js if exists 🗑️
         run: rm -f next.config.js
 
